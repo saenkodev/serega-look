@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    /*line-height: 18px;*/
+    font-weight: normal;
+
+    color: #1B1B1B;
+    background-color: #E5E5E5;
+}
+
+.content-wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    min-width: 430px;
+}
+
+h1 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 144px;
+    line-height: 150px;
+    font-weight: bold;
+
+    width: 600px;
+
+    /*color: #1B1B1B;*/
+    margin-top: 30px;
+    margin-bottom: 0;
+
+    text-transform: uppercase;
+}
+
+h1:hover {
+    background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, red);
+    /*text-fill-color: transparent;*/
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-animation: hue 2s infinite linear;
+}
+
+@-webkit-keyframes hue {
+  from {
+    -webkit-filter: hue-rotate(0deg);
+  }
+  to {
+    -webkit-filter: hue-rotate(-360deg);
+  }
+}
+
+.articles {
+    display: grid;
+    grid-gap: 28px;
+    grid-template-columns: repeat(auto-fit, 277px);
+
+    grid-auto-flow: dense;
+    /*grid-auto-rows: ;*/
+
+    list-style: none;
+    padding: 0;
+    margin: 0;
+
+    width: 1200px;
+}
+
+.headerDescription {
+    font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    /*line-height: 18px;*/
+    font-weight: medium;
+
+    margin-top: 35px;
+
+    color: #EF493F;
+}
+
+.articleItem {
+    border: solid 1px #C4C4C4;
+
+    width: 278px;
+
+    /*padding-top: 20px;
+    margin: 30px;*/
+}
+
+.articleItem:hover {
+    background-color: #EF493F;
+    transition: 0.4s linear;
+    box-shadow: 0 0 15px 0 rgba(0, 1, 1, 0.2);
+}
+
+.articleItem_link {
+    color: #1B1B1B;
+}
+
+.articleItem_link:hover {
+    color: #F8F7F3;
+}
+
+.size-1 {
+    grid-row: span 3;
+}
+.size-2 {
+    grid-row: span 5;
+}
+.size-3 {
+    grid-row: span 7;
+}
+.size-4 {
+    grid-row: span 8;
+}
+.size-5 {
+    grid-row: span 9;
+}
+/*.size-6 {
+    grid-row: span 6;
+}
+.size-7 {
+    grid-row: span 7;
+}
+.size-8 {
+    grid-row: span 8;
+}*/
+
+
+.articleItem_link {
+    text-decoration: none;
+}
+
+.articleItem img {
+    display: block;
+    margin: 20px auto 0px;
+}
+
+.artileItem_header {
+    margin: 20px 20px 0 20px;
+}
+
+.articleItem_description {
+    margin: 10px 20px;
+}
